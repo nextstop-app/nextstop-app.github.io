@@ -1,0 +1,18 @@
+<html>
+   <head>
+
+   </head>
+   <body>
+      <script type="text/javascript">
+        let params = (new URL(document.location)).searchParams;
+        let stopId = params.get("stopId");
+         function showDetails(stopId)
+         {
+            if(stopId == "101"){
+                window.location = 'https://gist.githubusercontent.com/noriega3/0979c588205e6701358c58d0cbd88649/raw/a0491d157c120c4db5bd79440ddd9074a087c9d5/101.json';
+            }
+         }
+         showDetails(stopId);
+         </script>
+   </body>
+</html>
